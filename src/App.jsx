@@ -1,11 +1,12 @@
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
 
   return (
-    <>
-      <h1 className='text-4xl bg-green-300'>Recipe Calorie</h1>
-    </>
+    <div className='max-w-[1320px] mx-auto my-8'>
+      <Navbar></Navbar>
+    </div>
   )
 }
 
