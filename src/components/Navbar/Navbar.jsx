@@ -5,7 +5,7 @@ const Navbar = () => {
         <div>
             <div className="navbar flex justify-between">
                 <div className="">
-                    <a className="btn btn-ghost text-3xl font-bold">Recipe Calories</a>
+                    <a className="btn btn-ghost p-0 text-3xl font-bold">Recipe Calories</a>
                 </div>
                 <div>
                     <ul className="flex gap-12">
