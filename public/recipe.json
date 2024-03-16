@@ -1,8 +1,8 @@
 [
     {
-      "recipe-image": "https://i.ibb.co/h1mPhGG/Fries-With-Leaves-Dish.jpg",
+      "recipe_image": "https://i.ibb.co/h1mPhGG/Fries-With-Leaves-Dish.jpg",
       "recipe_id": 1,
-      "recipe-name": "Fries With Leaves Dish",
+      "recipe_name": "Fries With Leaves Dish",
       "description": "Fries With Leaves pairs crispy fries with vibrant greens, offering a delicious harmony of textures and flavors for a satisfying culinary experience.",
       "preparing_time": "2 hours",
       "calories": "300-400 calories",
@@ -13,9 +13,9 @@
       ]
     },
     {
-      "recipe-image": "https://i.ibb.co/XJq9rrM/Vegetable-Salad.jpg",
+      "recipe_image": "https://i.ibb.co/XJq9rrM/Vegetable-Salad.jpg",
       "recipe_id": 2,
-      "recipe-name": "Vegetable Salad",
+      "recipe_name": "Vegetable Salad",
       "description": "A refreshing dish made with a variety of fresh vegetables like lettuce, tomatoes, cucumbers, and carrots, often topped with dressing.",
       "preparing_time": "25 min",
       "calories": "150 calories",
@@ -27,9 +27,9 @@
       ]
     },
     {
-      "recipe-image": "https://i.ibb.co/Mn4FpSX/Fries-and-Burger.jpg",
+      "recipe_image": "https://i.ibb.co/Mn4FpSX/Fries-and-Burger.jpg",
       "recipe_id": 3,
-      "recipe-name": "Fries and Burger",
+      "recipe_name": "Fries and Burger",
       "description": "Classic combo featuring a juicy burger served with a side of crispy, golden fries, offering a satisfying and indulgent meal option.",
       "preparing_time": "2 hours",
       "calories": "420 calories",
@@ -40,9 +40,9 @@
       ]
     },
     {
-      "recipe-image": "https://i.ibb.co/T0343bf/Vegetables-and-Noodles.jpg",
+      "recipe_image": "https://i.ibb.co/T0343bf/Vegetables-and-Noodles.jpg",
       "recipe_id": 4,
-      "recipe-name": "Vegetables and Noodles",
+      "recipe_name": "Vegetables and Noodles",
       "description": "Flavorful dish combining stir-fried vegetables with noodles, offering a nutritious and delicious meal option packed with vibrant flavors and textures.",
       "preparing_time": "30 min",
       "calories": "250 calories",
@@ -54,9 +54,9 @@
       ]
     },
     {
-      "recipe-image": "https://i.ibb.co/ZYf6mj7/Beef-Steak-With-Sauce.jpg",
+      "recipe_image": "https://i.ibb.co/ZYf6mj7/Beef-Steak-With-Sauce.jpg",
       "recipe_id": 5,
-      "recipe-name": "Beef Steak With Sauce",
+      "recipe_name": "Beef Steak With Sauce",
       "description": " Features succulent cuts of beef grilled to perfection and served with a rich, flavorful sauce, creating a mouthwatering dish that delights the senses.",
       "preparing_time": "40 min",
       "calories": "380 calories",
@@ -67,9 +67,9 @@
       ]
     },
     {
-      "recipe-image": "https://i.ibb.co/B4s26fc/berbecuie.jpg",
+      "recipe_image": "https://i.ibb.co/B4s26fc/berbecuie.jpg",
       "recipe_id": 6,
-      "recipe-name": "Berbecuie",
+      "recipe_name": "Berbecuie",
       "description": "Romanian grilled meat dish, enjoyed at gatherings, seasoned with spices for flavorful bites.",
       "preparing_time": "3 hours",
       "calories": "250 calories",
