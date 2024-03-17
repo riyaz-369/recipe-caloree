@@ -2,12 +2,13 @@ import PropTypes from 'prop-types';
 import { IoTimeOutline } from "react-icons/io5";
 import { AiOutlineFire } from "react-icons/ai";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleWantToCookBtn }) => {
     const { recipe_name, description, recipe_image, preparing_time, calories, ingredients } = recipe;
+
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <figure className="pt-7">
+            <div className="card bg-base-100 shadow-xl">
+                <figure className="p-4">
                     <img src={recipe_image} alt="Shoes" className="rounded-2xl" />
                 </figure>
                 <div className="card-body">
@@ -36,7 +37,7 @@ const Recipe = ({ recipe }) => {
                         </div>
                     </div>
                     <div className="card-actions mt-4">
-                        <button className="btn btn-success border-none rounded-full text-lg bg-green-400">Want to Cook</button>
+                        <button onClick={() => handleWantToCookBtn(recipe)} className="btn rounded-full text-lg bg-green-400">Want to Cook</button>
                     </div>
                 </div>
             </div>
@@ -46,6 +47,7 @@ const Recipe = ({ recipe }) => {
 
 Recipe.propTypes = {
     recipe: PropTypes.object,
+    handleWantToCookBtn: PropTypes.func,
 }
 
 export default Recipe;

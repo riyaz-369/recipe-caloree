@@ -10,7 +10,7 @@ const Banner = () => {
                         <p className="mb-7 opacity-90">Dive into our extensive collection of recipes spanning various cuisines from around the globe. Whether you are craving <br /> hearty comfort food, exotic Asian dishes, or elegant French cuisine, we got you covered with <br /> easy-to-follow recipes for every occasion.</p>
                         <div className='flex justify-center gap-8'>
                             <button
-                                className="btn btn-success bg-green-400 rounded-full text-black font-semibold text-lg border-none">Explore Now
+                                className="btn bg-green-400 rounded-full font-semibold text-lg border-none">Explore Now
                             </button>
                             <button
                                 className="btn btn-outline text-white font-semibold rounded-full text-lg">Our Feedback
