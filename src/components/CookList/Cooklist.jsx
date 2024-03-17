@@ -1,7 +1,16 @@
 import PropTypes from 'prop-types';
 import DisplayCookList from '../DisplayCookList/DisplayCookList';
+import { useState } from 'react';
+import DisplayCurrentlyCooking from '../DisplayCurrentlyCooking/DisplayCurrentlyCooking';
 
 const Cooklist = ({ wantToCook }) => {
+
+    const [currentlyCooking, setCurrentlyCooking] = useState([]);
+
+    const handlePreparing = (wantCook) => {
+        const newWantCook = [...currentlyCooking, wantCook];
+        setCurrentlyCooking(newWantCook)
+    }
 
     return (
         <div>
@@ -9,34 +18,27 @@ const Cooklist = ({ wantToCook }) => {
                 <h4 className="text-2xl font-semibold text-center my-4">Want to cook: {wantToCook.length} </h4>
                 <hr />
                 <table className="my-4 w-[542px]">
-                    <tr className='flex gap-24 font-semibold text-lg'>
-                        <h6>Name</h6>
-                        <h6 className='ml-10'>Time</h6>
-                        <h6>Calorie</h6>
+                    <tr className='flex gap-24 text-lg'>
+                        <th>Name</th>
+                        <th className='ml-10'>Time</th>
+                        <th>Calorie</th>
                     </tr>
                     {
-                        wantToCook.map((wantCook, idx) => <DisplayCookList key={wantCook.recipe_id} idx={idx} wantCook={wantCook}></DisplayCookList>)
+                        wantToCook.map((wantCook, idx) => <DisplayCookList key={wantCook.recipe_id} idx={idx} wantCook={wantCook} handlePreparing={handlePreparing}></DisplayCookList>)
                     }
                 </table>
 
-                <h4 className="text-2xl font-semibold text-center my-4 mt-6">Currently cooking: 02 </h4>
+                <h4 className="text-2xl font-semibold text-center my-4 mt-6">Currently cooking: {currentlyCooking.length} </h4>
                 <hr />
-                <table className="bg-gray-100 w-[542px] rounded-lg my-4">
-                    <tr>
+                <table className="w-[542px] my-4">
+                    <tr className='flex gap-24 text-lg'>
                         <th>Name</th>
-                        <th>Time</th>
-                        <th>Calorie</th>
+                        <th className='ml-28'>Time</th>
+                        <th className='ml-7'>Calorie</th>
                     </tr>
-                    <tr>
-                        <td className="px-8"> <span>1. </span>Chicken Caesar Salad</td>
-                        <td>20 minute</td>
-                        <td className="px-8">500 Calorie</td>
-                    </tr>
-                    <tr>
-                        <td className="px-8"> <span>1. </span>Chicken Caesar Salad</td>
-                        <td>20 minute</td>
-                        <td className="px-8">500 Calorie</td>
-                    </tr>
+                    {
+                        currentlyCooking.map((currentlyCook, idx) => <DisplayCurrentlyCooking key={idx} currentlyCook={currentlyCook} idx={idx}></DisplayCurrentlyCooking>)
+                    }
                 </table>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const DisplayCookList = ({ wantCook,idx }) => {
+const DisplayCookList = ({ wantCook,idx,handlePreparing }) => {
     const { recipe_name, preparing_time, calories } = wantCook;
 
     return (
@@ -9,7 +9,7 @@ const DisplayCookList = ({ wantCook,idx }) => {
                 <td> <span> {idx+1}. </span>{recipe_name}</td>
                 <td className='ml-10'>{preparing_time}</td>
                 <td className='ml-16'>{calories}</td>
-                <td><button className='btn bg-green-400 rounded-full'>Preparing</button></td>
+                <td><button onClick={()=> handlePreparing(wantCook)} className='btn bg-green-400 rounded-full'>Preparing</button></td>
             </tbody>
         </div>
     );
@@ -17,7 +17,8 @@ const DisplayCookList = ({ wantCook,idx }) => {
 
 DisplayCookList.propTypes = {
     wantCook: PropTypes.object,
-    idx: PropTypes.number
+    idx: PropTypes.number,
+    handlePreparing: PropTypes.func
 }
 
 export default DisplayCookList;
