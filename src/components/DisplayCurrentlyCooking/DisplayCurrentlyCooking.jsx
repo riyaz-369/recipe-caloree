@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 
 const DisplayCurrentlyCooking = ({ currentlyCook, idx }) => {
     const { recipe_name, preparing_time, calories } = currentlyCook;
-    console.log(recipe_name)
 
     return (
         <div>

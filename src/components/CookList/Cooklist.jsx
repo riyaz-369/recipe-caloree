@@ -9,16 +9,16 @@ const Cooklist = ({ wantToCook }) => {
 
     const handlePreparing = (wantCook) => {
         const newWantCook = [...currentlyCooking, wantCook];
-        setCurrentlyCooking(newWantCook)
+        setCurrentlyCooking(newWantCook);
     }
 
     return (
         <div>
-            <div className="bg-base-100 shadow-xl p-4 rounded-2xl">
+            <div className="bg-base-100 shadow-xl p-4 rounded-2xl border-2">
                 <h4 className="text-2xl font-semibold text-center my-4">Want to cook: {wantToCook.length} </h4>
                 <hr />
                 <table className="my-4 w-[542px]">
-                    <tr className='flex gap-24 text-lg'>
+                    <tr className='flex gap-24'>
                         <th>Name</th>
                         <th className='ml-10'>Time</th>
                         <th>Calorie</th>
@@ -31,7 +31,7 @@ const Cooklist = ({ wantToCook }) => {
                 <h4 className="text-2xl font-semibold text-center my-4 mt-6">Currently cooking: {currentlyCooking.length} </h4>
                 <hr />
                 <table className="w-[542px] my-4">
-                    <tr className='flex gap-24 text-lg'>
+                    <tr className='flex gap-24'>
                         <th>Name</th>
                         <th className='ml-28'>Time</th>
                         <th className='ml-7'>Calorie</th>

@@ -7,7 +7,7 @@ const Recipe = ({ recipe, handleWantToCookBtn }) => {
 
     return (
         <div>
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl border-2">
                 <figure className="p-4">
                     <img src={recipe_image} alt="Shoes" className="rounded-2xl" />
                 </figure>
